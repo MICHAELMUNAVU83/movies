@@ -37,16 +37,46 @@ const _layout = () => {
       />
       <Tabs.Screen
         name="profile"
-        options={{ headerShown: false, title: "Profile" }}
+        options={{
+          headerShown: false,
+          title: "Profile",
+          tabBarShowLabel: false,
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <TabIcon />
+            ) : (
+              <Image source={icons.home} className="w-6 h-6" tintColor="#fff" />
+            ),
+        }}
       />
 
       <Tabs.Screen
         name="saved"
-        options={{ headerShown: false, title: "Saved" }}
+        options={{
+          headerShown: false,
+          tabBarShowLabel: false,
+          title: "Saved",
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <TabIcon />
+            ) : (
+              <Image source={icons.home} className="w-6 h-6" tintColor="#fff" />
+            ),
+        }}
       />
       <Tabs.Screen
         name="search"
-        options={{ headerShown: false, title: "Search" }}
+        options={{
+          headerShown: false,
+          tabBarShowLabel: false,
+          title: "Search",
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <TabIcon />
+            ) : (
+              <Image source={icons.home} className="w-6 h-6" tintColor="#fff" />
+            ),
+        }}
       />
     </Tabs>
   );
